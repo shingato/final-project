@@ -1,13 +1,12 @@
 import firebase from "firebase";
 
 var firebaseConfig = {
-    apiKey: "AIzaSyBkLKAjsFctnF_yRpqGyN7jvZJ6Z-vqMFU",
-    authDomain: "finalproject-2841f.firebaseapp.com",
-    databaseURL: "https://finalproject-2841f-default-rtdb.firebaseio.com/",
-    projectId: "finalproject-2841f",
-    storageBucket: "finalproject-2841f.appspot.com",
-    messagingSenderId: "311775389989",
-    appId: "1:311775389989:web:7b21a3987879eb5b1512cc"
+    apiKey: "AIzaSyBnIXDTZwD2HppB34zMjH4grOVLDDsVrxk",
+    authDomain: "finalproject-8a3dd.firebaseapp.com",
+    projectId: "finalproject-8a3dd",
+    storageBucket: "finalproject-8a3dd.appspot.com",
+    messagingSenderId: "401276561057",
+    appId: "1:401276561057:web:ba3454cabfabdd998332e0"
   };
   // Initialize Firebase
   var fire = firebase.initializeApp(firebaseConfig);
