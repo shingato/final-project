@@ -79,6 +79,7 @@ class Dashboard extends Component{
         <br></br>
         <br></br>
         <button onClick={this.handleSubmit}>Submit</button>
+        <p>The data gets inputted through firebase realtime database but the chart isn't given );</p>
         <br></br>
         <br></br>
         <br></br>
