@@ -40,13 +40,13 @@ class Dashboard extends Component{
 
   
   handleSubmit=e=>{
-    fire.database().ref('chartdata')
+    fire.database().ref('chartdata').orderByKey().limitToLast(100);
     fire.database().ref('chartdata').push(this.state.text);
-    fire.database().ref('chartdata')
+    fire.database().ref('chartdata').orderByKey().limitToLast(100);
     fire.database().ref('chartdata').push(this.state.budget);
-    fire.database().ref('chartdata')
+    fire.database().ref('chartdata').orderByKey().limitToLast(100);
     fire.database().ref('chartdata').push(this.state.expenses);
-    fire.database().ref('chartdata')
+    fire.database().ref('chartdata').orderByKey().limitToLast(100);
     fire.database().ref('chartdata').push(this.state.month);
     this.setState({
       text : " ",
@@ -78,7 +78,7 @@ class Dashboard extends Component{
         <input type ="number" onChange={this.handleMonth} id="inputMonth"/>
         <br></br>
         <br></br>
-        <button onClick={this.handleSubmit}>Save</button>
+        <button onClick={this.handleSubmit}>Submit</button>
         <br></br>
         <br></br>
         <br></br>
