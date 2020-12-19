@@ -1,6 +1,5 @@
 import React , { Component } from 'react';
 import fire from './firebase';
-//import fire from './firebase';
 
 class Dashboard extends Component{
 
@@ -41,14 +40,14 @@ class Dashboard extends Component{
 
   
   handleSubmit=e=>{
-    fire.database().ref('messages').orderByKey().limitToLast(100);
-    fire.database().ref('messages').push(this.state.text);
-    fire.database().ref('messages').orderByKey().limitToLast(100);
-    fire.database().ref('messages').push(this.state.budget);
-    fire.database().ref('messages').orderByKey().limitToLast(100);
-    fire.database().ref('messages').push(this.state.expenses);
-    fire.database().ref('messages').orderByKey().limitToLast(100);
-    fire.database().ref('messages').push(this.state.month);
+    fire.database().ref('chartdata')
+    fire.database().ref('chartdata').push(this.state.text);
+    fire.database().ref('chartdata')
+    fire.database().ref('chartdata').push(this.state.budget);
+    fire.database().ref('chartdata')
+    fire.database().ref('chartdata').push(this.state.expenses);
+    fire.database().ref('chartdata')
+    fire.database().ref('chartdata').push(this.state.month);
     this.setState({
       text : " ",
       budget: " ",
