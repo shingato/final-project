@@ -1,8 +1,8 @@
 import React , { Component } from 'react';
 import fire from './firebase';
-
+ 
 class Dashboard extends Component{
-
+ 
   state = {
     text : " ",
     budget : " ",
@@ -13,31 +13,31 @@ class Dashboard extends Component{
   handleText=e=>{
     this.setState({
       text : e.target.value
-
+ 
     })
   }
-
+ 
   handleBudget=e=>{
     this.setState({
       budget : e.target.value
-
+ 
     })
   }
-
+ 
   handleExpenses=e=>{
     this.setState({
       expenses : e.target.value
-
+ 
     })
   }
-
+ 
   handleMonth=e=>{
     this.setState({
       month : e.target.value
-
+ 
     })
   }
-
+ 
   
   handleSubmit=e=>{
     fire.database().ref('chartdata').orderByKey().limitToLast(100);
@@ -56,7 +56,7 @@ class Dashboard extends Component{
     })
   }
    
-
+ 
   render(){
     return(
       <div className="">
@@ -87,5 +87,6 @@ class Dashboard extends Component{
     );
   }
 }
-
+ 
 export default Dashboard;
+

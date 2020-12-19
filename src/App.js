@@ -12,7 +12,7 @@ import HomePage from './HomePage/Homepage';
 import LoginPage from './LoginPage/LoginPage';
 import LogoutPage from './LogoutPage/LogoutPage';
 import SignupPage from './SignupPage/SignupPage';
-import Dashboard from './Dashboard/Dashboard';
+import Dashboard from './Dashboard/Dashboard'
 import Profile from './Profile/Profile';
 
 
