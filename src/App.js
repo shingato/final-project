@@ -10,10 +10,11 @@ import {
 import Menu from './Menu/Menu';
 import HomePage from './HomePage/Homepage';
 import LoginPage from './LoginPage/LoginPage';
-import SignoutPage from './Signout/SignoutPage';
+import LogoutPage from './LogoutPage/LogoutPage';
 import SignupPage from './SignupPage/SignupPage';
 import Dashboard from './Dashboard/Dashboard';
 import Profile from './Profile/Profile';
+
 
 
 function App() {
@@ -24,12 +25,12 @@ function App() {
         <Switch>
         <Route path="/Dashboard">
               <Dashboard/>
-              <SignoutPage/>
+              <LogoutPage/>
               </Route>
           <Route path="/">
             <HomePage/>
             <LoginPage/>
-            <SignoutPage/>
+            <LogoutPage/>
             <SignupPage/>
           </Route>
         </Switch>
